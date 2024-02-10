@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 async function generatePDF(website_url) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
 
   const page = await browser.newPage();
 
