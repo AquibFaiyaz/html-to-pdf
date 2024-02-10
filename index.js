@@ -1,3 +1,5 @@
+require("web-streams-polyfill");
+
 const express = require("express");
 const puppeteer = require("puppeteer");
 require("dotenv").config();
