@@ -3,7 +3,7 @@ require("web-streams-polyfill");
 const express = require("express");
 const puppeteer = require("puppeteer");
 require("dotenv").config();
-const cors = require("console");
+const cors = require("cors");
 
 const app = express();
 app.use(cors());
