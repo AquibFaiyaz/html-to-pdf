@@ -3,9 +3,10 @@ require("web-streams-polyfill");
 const express = require("express");
 const puppeteer = require("puppeteer");
 require("dotenv").config();
+const cors = require("console");
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 
 async function generatePDF(website_url) {
